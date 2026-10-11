@@ -1,0 +1,33 @@
+package uk.ac.westminster.products_api;
+
+public class Customer {
+    private int id;
+    private String name;
+    private String email;
+    private Address address; // Association: Customer has-an Address
+
+    public Customer() {}
+
+    public Customer(int id, String name, String email, Address address) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.address = address;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+}
